@@ -1,0 +1,6 @@
+#ignore executables
+GoRestApi
+
+#ignore logs
+*.log
+logs
