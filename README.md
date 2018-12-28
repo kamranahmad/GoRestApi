@@ -1,1 +1,6 @@
 # GoRestApi
+
+
+go build
+
+./GoRestApi
