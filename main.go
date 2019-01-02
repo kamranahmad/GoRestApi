@@ -179,9 +179,6 @@ func CreateTokenEndpoint(w http.ResponseWriter, req *http.Request) {
 
 	var user User
 	_ = json.NewDecoder(req.Body).Decode(&user)
-	fmt.Println("received user password")
-	fmt.Println(user)
-	fmt.Println("----------------")
 
 	token := jwt.NewWithClaims(jwt.SigningMethodHS256, jwt.MapClaims{
 		"username":   user.Username,
